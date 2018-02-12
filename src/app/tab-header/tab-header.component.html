@@ -1,6 +1,7 @@
 <div class="tab">
     <button
         *ngFor="let headerItem of headerItems"
+        [ngClass]="{ active: activePath == headerItem.path }"
         (click)="btnClick(headerItem.path)"
     >{{ headerItem.title }}</button>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
+import { TabHeader } from "../tab-header";
 import { TabHeaders } from "../tab-headers";
 
 @Component({
@@ -11,11 +12,13 @@ import { TabHeaders } from "../tab-headers";
 
 export class TabHeaderComponent implements OnInit {
 
-    headerItems;
+    headerItems: TabHeader[];
+    activePath: string = "";
 
     constructor(private router: Router) {}
 
     btnClick(path) {
+        this.activePath = path;
         this.router.navigateByUrl(path);
     }
 

@@ -1,5 +1,9 @@
 import { TabHeader } from "./tab-header";
 import { HomeComponent } from "./pages/home/home.component";
+import { ServicesComponent } from "./pages/services/services.component";
+import { TechnologiesComponent } from "./pages/technologies/technologies.component";
+import { AboutComponent } from "./pages/about/about.component";
+import { ContactComponent } from "./pages/contact/contact.component";
 
 export const TabHeaders: TabHeader[] = [
     {
@@ -11,21 +15,21 @@ export const TabHeaders: TabHeader[] = [
         title: "Services",
         path: "services",
 	order: 2,
-	component: HomeComponent 
+	component: ServicesComponent 
     }, {
         title: "Technologies",
 	path: "technologies",
 	order: 3,
-	component: HomeComponent 
+	component: TechnologiesComponent 
     }, {
         title: "About Us",
-	path: "aboutus",
+	path: "about",
 	order: 4,
-	component: HomeComponent 
+	component: AboutComponent 
     }, {
         title: "Contact",
 	path: "contact",
 	order: 5,
-	component: HomeComponent 
+	component: ContactComponent 
     }
 ];
